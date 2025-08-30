@@ -54,3 +54,14 @@ document.querySelectorAll(".call").forEach(btn => {
 clearHistoryBtn.addEventListener("click", () => {
   historyList.innerHTML = "";
 });
+
+
+function Heart(el) {
+    if (el.textContent === '♡') {
+      el.textContent = '❤️';
+      el.classList.add('active');
+    } else {
+      el.textContent = '♡';
+      el.classList.remove('active');
+    }
+  }

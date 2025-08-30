@@ -242,3 +242,15 @@ body {
       color: gray;
       cursor: pointer;
     }
+    
+.heart {
+  font-size: 22px;
+  color: #999;
+  cursor: pointer;
+  transition: transform 0.2s;
+  user-select: none;
+}
+.heart.active {
+  color: red;
+  transform: scale(1.2);
+}
