@@ -1,51 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Emergency Service Directory</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="styles.css">
 </head>
-<body class="bg-gradient-to-br from-green-100 to-green-300 min-h-screen">
-
+<body>
   <!-- Navbar -->
-  <nav class="flex justify-between items-center p-4 bg-white shadow-md">
-    <div class="flex items-center gap-2">
-      <img src="assets/logo.png" alt="Logo" class="w-8 h-8" />
-      <h1 class="text-xl font-bold">Emergency Directory</h1>
+  <nav class="navbar">
+    <div class="nav-left">
+      <img src="assets/logo.png" alt="Logo" class="logo">
+      <span class="site-name">Emergency Service</span>
     </div>
-    <div class="flex items-center gap-4">
-      <span>💗 <span id="heartCount">0</span></span>
-      <span>🪙 <span id="coinCount">100</span></span>
-      <span>📋 <span id="copyCount">0</span></span>
+    <div class="nav-right">
+      <span class="nav-item">❤️ <span id="likeCount">0</span></span>
+      <span class="nav-item">🪙 <span id="coinCount">100</span></span>
+      <span class="nav-item-btn"> <span id="copyCount">0</span> Copy</span>
     </div>
   </nav>
 
   <!-- Hero Section -->
-  <section class="text-center py-10 bg-gradient-to-r from-green-400 to-green-600 text-white">
-    <img src="assets/logo.png" alt="Gov Logo" class="mx-auto w-16 mb-4" />
-    <h2 class="text-3xl font-bold">Emergency Service Directory</h2>
-    <h6>Government Emergency Services at Your Fingertip - A project by Government of the People's Republic of Bangladesh</h6>
+  <section class="hero">
+    <img src="assets/logo.png" alt="Gov Logo" class="hero-logo">
+    <h1>Emergency Service Directory</h1>
+    <h6>Government Emergency Service at Your Fingertip - A Project by Government of the People's Republic of Bangladesh </h6>
   </section>
 
   <!-- Main Section -->
-  <main class="grid grid-cols-1 md:grid-cols-3 gap-6 p-6">
-    <!-- Cards Section -->
-    <section class="md:col-span-2 grid grid-cols-1 sm:grid-cols-2 gap-4" id="cardContainer">
-      <!-- Cards will be injected here -->
-    </section>
-
-    <!-- History Section -->
-    <section class="bg-white p-4 rounded shadow-md">
-      <div class="flex justify-between items-center mb-2">
-        <h3 class="text-lg font-bold">📞 Call History</h3>
-        <button onclick="clearHistory()" class="text-red-500 hover:underline">Clear History</button>
+  <section class="main">
+    <div class="cards">
+      <!-- 9 Cards -->
+      <div class="card">
+        <div class="card-header">
+          <h6>National Emergency Number</h6>
+          <button class="heart"><img src="assets/heart.png" alt=""></button>
+        </div>  
+        
+        <p class="number">999</p>
+        <span class="badge">All</span>
+        <div class="card-actions">
+          <button class="copy">📋 Copy</button>
+          <button class="call">📞 Call</button>
+        </div>
       </div>
-      <ul id="historyList" class="space-y-2 text-sm text-gray-700"></ul>
-    </section>
-  </main>
+      <div class="card">
+        <div class="card-header">
+          <h6>Police Helpline Number</h6>
+          <button class="heart"><img src="assets/heart.png" alt=""></button>
+        </div>
+        <p class="number">999</p>
+        <span class="badge">Police</span>
+        <div class="card-actions">
+          <button class="copy">📋 Copy</button>
+          <button class="call">📞 Call</button>
+        </div>
+      </div>
 
-  <script src="script.js"></script>
+      <div class="card">
+        <div class="card-header">
+          <h6>Fire Service Number</h6>
+           <button class="heart"><img src="assets/heart.png" alt=""></button>
+        </div>
+        <p class="number">999</p>
+        <span class="badge">Fire</span>
+        <div class="card-actions">
+          <button class="copy">📋 Copy</button>
+          <button class="call">📞 Call</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <h6>Ambulance Service</h6>
+           <button class="heart"><img src="assets/heart.png" alt=""></button>
+        </div>
+        <p class="number">1994-999999</p>
+        <span class="badge">Health</span>
+        <div class="card-actions">
+          <button class="copy">📋 Copy</button>
+          <button class="call">📞 Call</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <h6>Women & Child Helpline</h6>
+           <button class="heart"><img src="assets/heart.png" alt=""></button>
+        </div>
+        <p class="number">109</p>
+        <span class="badge">Help</span>
+        <div class="card-actions">
+          <button class="copy">📋 Copy</button>
+          <button class="call">📞 Call</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <h6>Anti-Corruption Helpline</h6>
+           <button class="heart"><img src="assets/heart.png" alt=""></button>
+        </div>
+        <p class="number">106</p>
+        <span class="badge">Govt</span>
+        <div class="card-actions">
+          <button class="copy">📋 Copy</button>
+          <button class="call">📞 Call</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <h6>Electricity Helpline</h6>
+           <button class="heart"><img src="assets/heart.png" alt=""></button>
+        </div>
+        <p class="number">16216</p>
+        <span class="badge">Electricity</span>
+        <div class="card-actions">
+          <button class="copy">📋 Copy</button>
+          <button class="call">📞 Call</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <h6>Brac Helpline</h6>
+           <button class="heart"><img src="assets/heart.png" alt=""></button>
+        </div>
+        <p class="number">16445</p>
+        <span class="badge">NGO</span>
+        <div class="card-actions">
+          <button class="copy">📋 Copy</button>
+          <button class="call">📞 Call</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <h6>Bangladesh Railway Helpline</h6>
+           <button class="heart"><img src="assets/heart.png" alt=""></button>
+        </div>
+        <p class="number">163</p>
+        <span class="badge">Travel</span>
+        <div class="card-actions">
+          <button class="copy">📋 Copy</button>
+          <button class="call">📞 Call</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Call History -->
+    <div class="history">
+      <div class="history-header">
+        <h5>Call History</h5>
+        <button id="clearHistory">Clear</button>
+      </div>
+      <ul id="historyList"></ul>
+    </div>
+    
+  </section>
+
+  <script src="app.js"></script>
 </body>
 </html>

@@ -1,0 +1,244 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background: white;
+  border-bottom: 1px solid #ddd;
+}
+.nav-item-btn{
+  color: white;
+  background-color: green;
+  border-radius: 25px;
+  padding: 8px 16px;
+
+}
+.logo {
+  width: 35px;
+  margin-right: 10px;
+}
+.nav-left {
+  display: flex;
+  align-items: center;
+}
+.site-name {
+  font-weight: bold;
+  font-size: 18px;
+  color: green;
+}
+.nav-right .nav-item {
+  margin-left: 15px;
+  padding: 12px 24px;
+  background-color: #dcefe0;
+  border-radius: 25%;
+}
+
+.hero {
+  text-align: center;
+  padding: 10px;
+  background: linear-gradient(to right, #004d40, #00695c);
+  color: white;
+  height: 150px;
+  
+}
+.hero-logo {
+  width: 50px;
+  margin-bottom: 10px;
+}
+
+.main {
+  display: flex;
+  padding: 20px;
+  gap: 20px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px;
+  flex: 2;
+  
+}
+
+.card {
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.number {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+.badge {
+  background: #eee;
+  padding: 3px 7px;
+  border-radius: px;
+  font-size: 12px;
+}
+.card-actions {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  
+}
+.card-actions button {
+  flex: 1;
+  margin: 2px;
+  padding: 5px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  font-size: 14px;
+  cursor: pointer; 
+}
+.copy {
+  background: #ddd;
+}
+.call {
+  background: green;
+  color: white;
+}
+
+.history {
+ max-width: 150px;
+  flex: 1;
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  
+
+  
+}
+.history-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#historyList {
+  list-style: none;
+  padding: 0;
+}
+#historyList li {
+  border-bottom: 1px solid #ddd;
+  padding: 5px 0;
+  font-size: 14px;
+}
+#clearHistory{
+  color: white;
+  background-color: green;
+  border-radius: 25px;
+  border-style: none;
+  padding: 12px 24px;
+}
+.heart{
+  background-color: white;
+  border: none;
+}
+
+.heart img {
+  width: 20px;     /* set image size */
+  height: auto;
+  display: block;
+  margin: 0 auto; 
+  background-color: white; 
+  border: none;/* centers the image */
+}
+
+
+
+  .card {
+      background: white;
+      width: 150px;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+      text-align: left;
+      position: relative;
+    }
+
+    .icon {
+      width: 50px;
+      height: 50px;
+      background: #ffe4e4;
+      border-radius: 12px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 24px;
+    }
+
+    .title {
+      font-size: 18px;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+
+    .subtitle {
+      font-size: 14px;
+      color: gray;
+    }
+
+    .number {
+      font-size: 28px;
+      font-weight: bold;
+      margin: 10px 0;
+    }
+
+    .tag {
+      display: inline-block;
+      padding: 5px 10px;
+      background: #f1f1f1;
+      border-radius: 12px;
+      font-size: 12px;
+      margin-bottom: 15px;
+    }
+
+    .btns {
+      display: flex;
+      gap: 10px;
+    }
+
+    .btn {
+      flex: 1;
+      padding: 10px;
+      border: none;
+      border-radius: 10px;
+      font-size: 14px;
+      cursor: pointer;
+    }
+
+    .copy {
+      background: #f1f1f1;
+    }
+
+    .call {
+      background: #00c853;
+      color: white;
+    }
+
+    .heart {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      font-size: 18px;
+      color: gray;
+      cursor: pointer;
+    }
