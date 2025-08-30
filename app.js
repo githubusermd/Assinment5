@@ -8,7 +8,7 @@ const copyDisplay = document.getElementById("copyCount");
 const historyList = document.getElementById("historyList");
 const clearHistoryBtn = document.getElementById("clearHistory");
 
-// Like buttons
+
 document.querySelectorAll(".heart").forEach(btn => {
   btn.addEventListener("click", () => {
     likeCount++;
@@ -16,7 +16,7 @@ document.querySelectorAll(".heart").forEach(btn => {
   });
 });
 
-// Copy buttons
+
 document.querySelectorAll(".copy").forEach(btn => {
   btn.addEventListener("click", () => {
     const number = btn.closest(".card").querySelector(".number").textContent;
@@ -27,7 +27,7 @@ document.querySelectorAll(".copy").forEach(btn => {
   });
 });
 
-// Call buttons
+
 document.querySelectorAll(".call").forEach(btn => {
   btn.addEventListener("click", () => {
     const card = btn.closest(".card");
@@ -50,7 +50,7 @@ document.querySelectorAll(".call").forEach(btn => {
   });
 });
 
-// Clear history
+
 clearHistoryBtn.addEventListener("click", () => {
   historyList.innerHTML = "";
 });

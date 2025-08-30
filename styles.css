@@ -154,17 +154,17 @@ body {
 }
 
 .heart img {
-  width: 20px;     /* set image size */
+  width: 20px;     
   height: auto;
   display: block;
   margin: 0 auto; 
   background-color: white; 
-  border: none;/* centers the image */
+  border: none;
 }
 
 
 
-  .card {
+.card {
       background: white;
       width: 150px;
       padding: 20px;
@@ -174,7 +174,7 @@ body {
       position: relative;
     }
 
-    .icon {
+.icon {
       width: 50px;
       height: 50px;
       background: #ffe4e4;
@@ -185,24 +185,24 @@ body {
       font-size: 24px;
     }
 
-    .title {
+.title {
       font-size: 18px;
       font-weight: bold;
       margin-top: 10px;
     }
 
-    .subtitle {
+.subtitle {
       font-size: 14px;
       color: gray;
     }
 
-    .number {
+.number {
       font-size: 28px;
       font-weight: bold;
       margin: 10px 0;
     }
 
-    .tag {
+.tag {
       display: inline-block;
       padding: 5px 10px;
       background: #f1f1f1;
@@ -211,12 +211,12 @@ body {
       margin-bottom: 15px;
     }
 
-    .btns {
+.btns {
       display: flex;
       gap: 10px;
     }
 
-    .btn {
+.btn {
       flex: 1;
       padding: 10px;
       border: none;
@@ -225,16 +225,16 @@ body {
       cursor: pointer;
     }
 
-    .copy {
+.copy {
       background: #f1f1f1;
     }
 
-    .call {
+.call {
       background: #00c853;
       color: white;
     }
 
-    .heart {
+.heart {
       position: absolute;
       top: 20px;
       right: 20px;
@@ -253,4 +253,45 @@ body {
 .heart.active {
   color: red;
   transform: scale(1.2);
+}
+
+@media (max-width: 768px) {
+  .navbar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .cards {
+    display: flex;
+    flex-direction: column;  
+    align-items: center;     
+  }
+
+  .card {
+    width: 90%; 
+    margin-bottom: 15px;
+  }
+
+  
+  .main {
+    width: 100%;
+    margin-top: 20px;
+    order: 2;  
+  }
+
+  
+  .header, .footer {
+    text-align: center;
+    padding: 10px;
+  }
+
+  body {
+    padding: 10px;
+  }
+  .history {
+    width: 100%;
+    margin-top: 20px;
+    order: 2;
+  }
 }
